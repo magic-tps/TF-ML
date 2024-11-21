@@ -25,7 +25,7 @@ low_val = st.slider("Low", min_value=0.0001, max_value=0.0004, value=0.00025, st
 close_val = st.slider("Close", min_value=0.0002, max_value=0.0005, value=0.00029, step=0.00001, format="%.5f")
 volume_val = st.slider("Volume", min_value=1e11, max_value=5e11, value=2e11, step=1e10, format="%.1e")
 volatility_val = st.slider("Volatility", min_value=0.00001, max_value=0.0001, value=0.00004, step=0.00001, format="%.5f")
-z_score_val = st.slider("z_score", min_value=-3.0, max_value=3.0, value=0.5, step=0.1, format="%.2f")
+
 
 # Crear un DataFrame con los valores introducidos
 valores_prueba = {
@@ -35,7 +35,6 @@ valores_prueba = {
     "Close": close_val,
     "Volume": volume_val,
     "Volatility": volatility_val,
-    "z_score": z_score_val,
 }
 input_data = pd.DataFrame([valores_prueba])
 
